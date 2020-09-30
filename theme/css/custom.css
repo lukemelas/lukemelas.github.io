@@ -1,0 +1,244 @@
+/* Menu */
+.navigation.pure-menu-horizontal {
+    padding: 15px;
+    /* background: #0c0c0c; */
+    background: rgb(25, 27, 31);
+    max-width: none;
+    padding-left: 5%;
+}
+
+.pure-menu-heading.pure-menu-link,
+.pure-menu-heading.pure-menu-link:hover {
+    text-transform: capitalize;
+    font-size: 1.0em;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0px;
+}
+
+.pure-menu-link,
+.pure-menu-link:hover {
+    color: #cccccc;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    background: inherit;
+}
+
+/* Layout */
+
+div.main-container,
+footer.index-footer {
+    /* background: white; */
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+}
+
+/* div.main-container, footer.index-footer {
+    color: hsla(0,0%,100%,.75);
+    background: #191b1f;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(25, 27, 31);
+}
+
+
+h1 h2 h3 h4 h5 h6 {
+    font-weight: normal;
+    color: white; 
+} */
+
+
+/* Font */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif
+}
+
+.prompt.input_prompt {
+    display: none;
+}
+
+/* .output_subarea.output_stream.output_stdout.output_text:before {
+    content: "Output:";
+    position: absolute;
+    font-family: Consolas, "Deja Vu Sans Mono", "Ubuntu Mono", "Bitstream Vera Sans Mono", Monaco, "Courier New", monospace;
+    font-weight: bold;
+    margin-top: -15px;
+}
+
+.output_subarea.output_stream.output_stdout.output_text {
+    padding-top: 6px;
+} */
+
+.output_subarea.output_stream.output_stdout.output_text pre {
+    background-color: #e6e6e6;
+}
+
+a.anchor-link {
+    visibility: hidden;
+}
+
+a.author {
+    text-transform: capitalize;
+}
+
+a.category,
+div.post-meta br {
+    display: none;
+}
+
+div.tags a {
+    display: none;
+}
+
+div.page-container footer div.post-footer {
+    display: inherit;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 80px;
+}
+
+div.page-container footer div.post-footer * {
+    display: none;
+}
+
+img.main-avatar {
+    display: block;
+    margin: auto;
+    width: 140px;
+    border-radius: 50%;
+    border: 3px solid #e6e6e6;
+}
+
+.title-container figure {
+    margin: 10% 0% 15% 0%;
+}
+
+div.main-container div.post {
+    border: none;
+}
+
+div.main-header {
+    padding: 15px 0px;
+    font-size: 18px;
+}
+
+div.main-header ul {
+    margin: 0;
+    padding: 0;
+}
+
+div.main-header li,
+div.main-header li a.pure-menu-heading.pure-menu-link {
+    color: #464646;
+    display: inline-block;
+    padding: 5px;
+    font-weight: normal;
+}
+
+div.main-header li a.pure-menu-heading.pure-menu-link:hover {
+    color: black;
+}
+
+div.main-container div.post h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    margin-top: 5px
+}
+
+div.main-container div.post h2 a {
+    font-size: 20px;
+    color: #424242;
+}
+
+div.main-container div.post h2 a:hover {
+    color: black;
+}
+
+.post .post-meta.pure-g {
+    display: none;
+}
+
+.main-container .post .post-content.post-content,
+.post-footer {
+    display: inline;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.post-footer {
+    padding-left: 20px;
+}
+
+.post-content span {
+    color: #b1b1b1;
+}
+
+.post-content p {
+    display: inline;
+}
+
+.title-container h1 {
+    font-weight: normal;
+}
+
+.post.post.post {
+    margin: 0px;
+}
+
+div.article-header-container div.background-image-container div.background-image-small div.title-container h1 {
+    line-height: 1.5;
+}
+
+div.main-container div.post {
+    box-shadow: none;
+}
+
+.homepage-news-column li {
+    line-height: 1.8;
+}
+
+footer.index-footer {
+    margin-top: 7%;
+}
+
+.flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+div.post-meta div.meta-data {
+    text-align: center;
+}
+
+@media screen and (max-width: 64em) {
+    .right-bar {
+        padding-left: 20px;
+    }
+
+    div.main-container div.post h2 {
+        line-height: 1;
+    }
+}
+
+div.post.entry-content.homepage {
+    line-height: 1.8;
+    padding-top: 5px;
+    text-align: left;
+}
