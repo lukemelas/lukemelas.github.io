@@ -27,10 +27,38 @@
   html {
     color-scheme: dark;
   }
+
+  body a {
+    color: var(--color-sky-600)
+  }
+
 }
 
 html {
   min-width: 360px;
+}
+
+body {
+  /* Custom font example: */
+  /* font-family: var(--custom-body-font); */
+  font-weight: 300;
+  color: #333,
+}
+
+a {
+  color: var(--color-blue-800)  /* 1e40af */
+}
+
+a.navitem {
+  color: gray;
+}
+
+a.navitem:hover {
+  color: black;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--custom-heading-font);
 }
 
 .prose .anchor {

@@ -7,19 +7,36 @@ import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
 import { baseUrl } from './sitemap'
+import { EB_Garamond, DM_Sans } from 'next/font/google'
+
+
+export const customHeadingFont = EB_Garamond({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--custom-heading-font',
+})
+
+/* Custom font example: */
+// export const customBodyFont = DM_Sans({
+//   subsets: ['latin'],
+//   weight: ['400'],
+//   variable: '--custom-body-font',
+//   display: 'swap'
+// })
+
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Next.js Portfolio Starter',
-    template: '%s | Next.js Portfolio Starter',
+    default: 'Luke Melas-Kyriazi',
+    template: '%s | Luke Melas-Kyriazi',
   },
-  description: 'This is my portfolio.',
+  description: 'I\'m a Rhodes Scholar and PhD student at Oxford University. My research spans machine learning, computer vision, and natural language processing.',
   openGraph: {
-    title: 'My Portfolio',
-    description: 'This is my portfolio.',
+    title: 'Luke Melas-Kyriazi',
+    description: 'I\'m a Rhodes Scholar and PhD student at Oxford University. My research spans machine learning, computer vision, and natural language processing.',
     url: baseUrl,
-    siteName: 'My Portfolio',
+    siteName: 'Luke Melas-Kyriazi',
     locale: 'en_US',
     type: 'website',
   },
@@ -52,7 +69,8 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
-      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
+      {/* Custom font example: */}
+      <body className="antialiased max-w-3xl mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />
           {children}
