@@ -2,9 +2,9 @@ import Image from 'next/image';
 import { FaGithub, FaEnvelope } from "react-icons/fa";
 import { FaGoogleScholar } from "react-icons/fa6";
 import Link from "next/link";
-import { customHeadingFont } from './layout';
+import { customHeadingFont } from './fonts';
 
-export const paperData = [
+const paperData = [
   {
     "title": "IM-3D: Iterative Multiview Diffusion and Reconstruction for High-Quality 3D Generation",
     "authors": ["L Melas-Kyriazi", "I Laina", "C Rupprecht", "N Neverova", "A Vedaldi", "O Gafni"],
@@ -14,20 +14,20 @@ export const paperData = [
     "tags": ["CV"]
   },
   {
-    "title": "GES: Generalized Exponential Splatting for Efficient Radiance Field Rendering",
-    "authors": ["A Hamdi", "L Melas-Kyriazi", "G Qian", "J Mai", "R Liu", "C Vondrick", "B Ghanem"],
-    "publication": "CVPR 2024",
-    "paper": "https://arxiv.org/abs/2402.10128",
-    "website": "https://abdullahamdi.com/ges/",
-    "tags": ["CV"]
-  },
-  {
     "title": "Fixed Point Diffusion Models",
     "authors": ["X Bai*", "L Melas-Kyriazi*"],
     "publication": "CVPR 2024",
     "paper": "https://arxiv.org/abs/2401.08741",
     "website": "https://lukemelas.github.io/fixed-point-diffusion-models/",
     "tags": ["ML", "CV"]
+  },
+  {
+    "title": "GES: Generalized Exponential Splatting for Efficient Radiance Field Rendering",
+    "authors": ["A Hamdi", "L Melas-Kyriazi", "G Qian", "J Mai", "R Liu", "C Vondrick", "B Ghanem", "Andrea Vedaldi"],
+    "publication": "CVPR 2024",
+    "paper": "https://arxiv.org/abs/2402.10128",
+    "website": "https://abdullahamdi.com/ges/",
+    "tags": ["CV"]
   },
   {
     "title": "A Benchmark for Learning to Translate a New Language from One Grammar Book",
@@ -66,14 +66,14 @@ export const paperData = [
   },
   {
     "title": "Understanding Self-Supervised Features for Learning Unsupervised Instance Segmentation",
-    "authors": ["P Engstler", "L Melas-Kyriazi", "C Rupprecht", "I Laina"],
+    "authors": ["P Engstler*", "L Melas-Kyriazi*", "C Rupprecht", "I Laina"],
     "publication": "NeurIPS 2023 - Workshop on Self-Supervised Learning",
     "paper": "https://arxiv.org/pdf/2311.14665",
     "tags": ["CV"]
   },
   {
     "title": "Augmenting Medical Image Classifiers with Synthetic Data from Latent Diffusion Models",
-    "authors": ["LW Sagers", "JA Diao", "L Melas-Kyriazi", "M Groh", "P Rajpurkar", "AS Adamson"],
+    "authors": ["LW Sagers*", "JA Diao*", "L Melas-Kyriazi*", "M Groh", "P Rajpurkar", "AS Adamson", "V Rotemberg", "R Daneshjou", "AK Manrai"],
     "publication": "In Submission",
     "paper": "https://arxiv.org/abs/2308.12453",
     "tags": ["CV", "Medical ML"]
@@ -88,7 +88,7 @@ export const paperData = [
   },
   {
     "title": "Intrinsic Gradient Compression for Scalable and Efficient Federated Learning",
-    "authors": ["L Melas-Kyriazi", "F Wang"],
+    "authors": ["L Melas-Kyriazi*", "F Wang*"],
     "publication": "ACL 2023 - Workshop on Federated Learning for NLP",
     "paper": "https://arxiv.org/abs/2112.02656",
     "tags": ["ML"]
@@ -305,6 +305,13 @@ export default function Page() {
 
       {/* <h3 className={"mb-4 text-2xl font-extralight text-center"} id='papers'>~ Dissertations ~</h3>
       <div className="grid grid-cols-1 md:grid-cols-1 gap-4"> */}
+
+      {/* <h3 className={"mb-4 text-2xl font-extralight text-center"} id='papers'>~ Software Projects ~</h3>
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-4"> */}
+
+      {/* <h3 className={"mb-4 text-2xl font-extralight text-center"} id='papers'>~ About Me? ~</h3>
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-4"> */}
+      {/* Running, hiking, and traveling to new places. */}
 
 
     </section>
