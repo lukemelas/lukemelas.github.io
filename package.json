@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "everything": "echo 'Committing and pushing to Git' && git add -A && git commit -m 'Update website' && git push"
   },
   "dependencies": {
     "@tailwindcss/postcss": "4.0.0-alpha.13",
