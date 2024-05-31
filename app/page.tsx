@@ -8,9 +8,9 @@ const paperData = [
   {
     "title": "IM-3D: Iterative Multiview Diffusion and Reconstruction for High-Quality 3D Generation",
     "authors": ["L Melas-Kyriazi", "I Laina", "C Rupprecht", "N Neverova", "A Vedaldi", "O Gafni", "F Kokkinos"],
-    "publication": "In Submission",
+    "publication": "ICML 2024",
     "paper": "https://arxiv.org/abs/2402.08682",
-    "website": "",
+    "website": "https://lukemelas.github.io/IM-3D/",
     "tags": ["CV"]
   },
   {
@@ -246,9 +246,10 @@ export default function Page() {
       <hr className="my-8 border-t border-gray-300" />
       <h3 className={"mb-4 text-2xl font-extralight text-center"} id='papers'>~ News ~</h3>
       <ul>
-        <li>• Two computer <span className='text-bold' >vision</span> papers accepted to CVPR 2024 </li>
-        <li>• One NLP paper accepted to ICLR 2024 <span className='text-red-400'>(as a Spotlight!)</span></li>
-        <li>• Two computer vision papers accepted to CVPR 2023 <span className='text-red-400'>(one as a Spotlight!)</span></li>
+        <li>• One computer vision paper (<Link href="https://lukemelas.github.io/IM-3D/">↗</Link>) accepted to ICML 2024</li>
+        <li>• Two computer vision papers (<Link href="https://lukemelas.github.io/fixed-point-diffusion-models/">↗</Link>,<Link href="https://abdullahamdi.com/ges/">↗</Link>) accepted to CVPR 2024 </li>
+        <li>• One NLP paper (<Link href="https://lukemelas.github.io/mtob/">↗</Link>) accepted to ICLR 2024 <span className='text-red-400'>(as a Spotlight!)</span></li>
+        <li>• Two computer vision papers (<Link href="https://lukemelas.github.io/realfusion/">↗</Link>,<Link href="https://lukemelas.github.io/projection-conditioned-point-cloud-diffusion/">↗</Link>) accepted to CVPR 2023 <span className='text-red-400'>(one as a Spotlight!)</span></li>
         <li>• Started working as a Visiting Researcher at Meta Research (formerly Facebook AI Research) part-time while completing my PhD</li>
         <li>• One dataset paper accepted at NeurIPS 2023, and one CV paper at a NeurIPS Workshop</li>
         <li>• One NLP paper accepted at ACL Findings 2023, and one ML paper at an ACL Workshop</li>
