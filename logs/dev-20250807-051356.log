@@ -1,0 +1,469 @@
+
+> @ dev /Users/luke/Documents/personal/lukemelas.github.io
+> next dev
+
+ ⚠ Specified "redirects" will not automatically work with "output: export". See more info here: https://nextjs.org/docs/messages/export-no-custom-routes
+ ⚠ Specified "redirects" will not automatically work with "output: export". See more info here: https://nextjs.org/docs/messages/export-no-custom-routes
+   ▲ Next.js 15.4.6
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.4.128:3000
+
+ ✓ Starting...
+ ⚠ Specified "redirects" will not automatically work with "output: export". See more info here: https://nextjs.org/docs/messages/export-no-custom-routes
+ ⚠ Specified "redirects" will not automatically work with "output: export". See more info here: https://nextjs.org/docs/messages/export-no-custom-routes
+ ✓ Ready in 1051ms
+ ○ Compiling / ...
+ ✓ Compiled / in 2.1s (687 modules)
+Each child in a list should have a unique "key" prop. See https://react.dev/link/warning-keys for more information.
+ ⨯ Error: Image Optimization using the default loader is not compatible with `{ output: 'export' }`.
+  Possible solutions:
+    - Remove `{ output: 'export' }` and run "next start" to run server mode including the Image Optimization API.
+    - Configure `{ images: { unoptimized: true } }` in `next.config.js` to disable the Image Optimization API.
+  Read more: https://nextjs.org/docs/messages/export-image-api
+    at getImgProps (../../../src/shared/lib/get-img-props.ts:434:12)
+    at eval (../../src/client/image-component.tsx:389:64)
+  432 |   if (process.env.NODE_ENV !== 'production') {
+  433 |     if (config.output === 'export' && isDefaultLoader && !unoptimized) {
+> 434 |       throw new Error(
+      |            ^
+  435 |         `Image Optimization using the default loader is not compatible with \`{ output: 'export' }\`.
+  436 |   Possible solutions:
+  437 |     - Remove \`{ output: 'export' }\` and run "next start" to run server mode including the Image Optimization API. {
+  digest: '1321756131'
+}
+ ✓ Compiled in 414ms (255 modules)
+ GET / 500 in 2500ms
+ ✓ Compiled in 189ms (660 modules)
+ ⨯ Error: Image Optimization using the default loader is not compatible with `{ output: 'export' }`.
+  Possible solutions:
+    - Remove `{ output: 'export' }` and run "next start" to run server mode including the Image Optimization API.
+    - Configure `{ images: { unoptimized: true } }` in `next.config.js` to disable the Image Optimization API.
+  Read more: https://nextjs.org/docs/messages/export-image-api
+    at getImgProps (../../../src/shared/lib/get-img-props.ts:434:12)
+    at eval (../../src/client/image-component.tsx:389:64)
+  432 |   if (process.env.NODE_ENV !== 'production') {
+  433 |     if (config.output === 'export' && isDefaultLoader && !unoptimized) {
+> 434 |       throw new Error(
+      |            ^
+  435 |         `Image Optimization using the default loader is not compatible with \`{ output: 'export' }\`.
+  436 |   Possible solutions:
+  437 |     - Remove \`{ output: 'export' }\` and run "next start" to run server mode including the Image Optimization API. {
+  digest: '1321756131'
+}
+ GET / 500 in 253ms
+ ⚠ Found a change in next.config.js. Restarting the server to apply the changes...
+ ⚠ Specified "redirects" will not automatically work with "output: export". See more info here: https://nextjs.org/docs/messages/export-no-custom-routes
+   ▲ Next.js 15.4.6
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.4.128:3000
+
+ ✓ Starting...
+ ⚠ Specified "redirects" will not automatically work with "output: export". See more info here: https://nextjs.org/docs/messages/export-no-custom-routes
+ ⚠ Specified "redirects" will not automatically work with "output: export". See more info here: https://nextjs.org/docs/messages/export-no-custom-routes
+ ✓ Ready in 1032ms
+ ○ Compiling / ...
+ ✓ Compiled / in 971ms (660 modules)
+ ✓ Compiled in 404ms (255 modules)
+ GET / 200 in 1409ms
+ GET / 200 in 93ms
+ ✓ Compiled in 208ms (660 modules)
+ GET / 200 in 139ms
+ ✓ Compiled in 182ms (660 modules)
+ GET / 200 in 92ms
+ ✓ Compiled in 158ms (660 modules)
+ GET / 200 in 89ms
+ ✓ Compiled in 229ms (660 modules)
+ GET / 200 in 149ms
+ GET / 200 in 151ms
+ ✓ Compiled in 181ms (660 modules)
+ GET / 200 in 103ms
+ GET / 200 in 25ms
+ ⨯ ./app/page.tsx
+Error:   [31mx[0m Expected '</', got 'jsx text (
+  [31m|[0m
+  [31m|[0m       )'
+     ,-[[36;1;4m/Users/luke/Documents/personal/lukemelas.github.io/app/page.tsx[0m:272:1]
+ [2m269[0m |             <li>• Submitted Bachelor's Thesis and graduated from Harvard!</li>
+ [2m270[0m |             <li>• One computer vision paper accepted at CVPR 2020</li>
+ [2m271[0m |             <li>• My first paper accepted at EMNLP 2019 (an extended project for CS 287)</li>
+ [2m272[0m | [35;1m,[0m[35;1m-[0m[35;1m>[0m       </ul>
+ [2m273[0m | [35;1m|[0m   
+ [2m274[0m | [35;1m`[0m[35;1m-[0m[35;1m>[0m       {/* Papers */}
+ [2m275[0m |           <hr className="my-8 border-t border-gray-300" />
+ [2m276[0m |           <h3 className={"mb-4 text-2xl font-extralight text-center"} id='papers'>~ Publications ~</h3>
+ [2m277[0m |           <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+ ○ Compiling /_error ...
+ ⨯ ./app/page.tsx
+Error:   [31mx[0m Expected '</', got 'jsx text (
+  [31m|[0m
+  [31m|[0m       )'
+     ,-[[36;1;4m/Users/luke/Documents/personal/lukemelas.github.io/app/page.tsx[0m:272:1]
+ [2m269[0m |             <li>• Submitted Bachelor's Thesis and graduated from Harvard!</li>
+ [2m270[0m |             <li>• One computer vision paper accepted at CVPR 2020</li>
+ [2m271[0m |             <li>• My first paper accepted at EMNLP 2019 (an extended project for CS 287)</li>
+ [2m272[0m | [35;1m,[0m[35;1m-[0m[35;1m>[0m       </ul>
+ [2m273[0m | [35;1m|[0m   
+ [2m274[0m | [35;1m`[0m[35;1m-[0m[35;1m>[0m       {/* Papers */}
+ [2m275[0m |           <hr className="my-8 border-t border-gray-300" />
+ [2m276[0m |           <h3 className={"mb-4 text-2xl font-extralight text-center"} id='papers'>~ Publications ~</h3>
+ [2m277[0m |           <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+ GET / 500 in 1714ms
+ GET / 500 in 5ms
+ GET / 500 in 5ms
+ GET / 500 in 6ms
+ GET / 500 in 5ms
+ GET / 500 in 7ms
+ GET / 500 in 5ms
+ GET / 500 in 7ms
+ ⨯ ./app/page.tsx
+Error:   [31mx[0m Expected '</', got 'jsx text (
+  [31m|[0m
+  [31m|[0m       )'
+     ,-[[36;1;4m/Users/luke/Documents/personal/lukemelas.github.io/app/page.tsx[0m:272:1]
+ [2m269[0m |             <li>• Submitted Bachelor's Thesis and graduated from Harvard!</li>
+ [2m270[0m |             <li>• One computer vision paper accepted at CVPR 2020</li>
+ [2m271[0m |             <li>• My first paper accepted at EMNLP 2019 (an extended project for CS 287)</li>
+ [2m272[0m | [35;1m,[0m[35;1m-[0m[35;1m>[0m       </ul>
+ [2m273[0m | [35;1m|[0m   
+ [2m274[0m | [35;1m`[0m[35;1m-[0m[35;1m>[0m       {/* Papers */}
+ [2m275[0m |           <hr className="my-8 border-t border-gray-300" />
+ [2m276[0m |           <h3 className={"mb-4 text-2xl font-extralight text-center"} id='papers'>~ Publications ~</h3>
+ [2m277[0m |           <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+ GET /_next/static/webpack/f6eb1628b9cfe64b.webpack.hot-update.json 500 in 412ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /_next/static/webpack/f6eb1628b9cfe64b.webpack.hot-update.json 500 in 8ms
+ GET / 500 in 14ms
+ GET / 500 in 5ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 500 in 5ms
+ GET / 500 in 6ms
+ ⨯ ./app/page.tsx
+Error:   [31mx[0m Expected '</', got 'jsx text (
+  [31m|[0m
+  [31m|[0m       )'
+     ,-[[36;1;4m/Users/luke/Documents/personal/lukemelas.github.io/app/page.tsx[0m:271:1]
+ [2m268[0m |             <li>• Submitted Bachelor's Thesis and graduated from Harvard!</li>
+ [2m269[0m |             <li>• One computer vision paper accepted at CVPR 2020</li>
+ [2m270[0m |             <li>• My first paper accepted at EMNLP 2019 (an extended project for CS 287)</li>
+ [2m271[0m | [35;1m,[0m[35;1m-[0m[35;1m>[0m       </ul>
+ [2m272[0m | [35;1m|[0m   
+ [2m273[0m | [35;1m`[0m[35;1m-[0m[35;1m>[0m       {/* Papers */}
+ [2m274[0m |           <hr className="my-8 border-t border-gray-300" />
+ [2m275[0m |           <h3 className={"mb-4 text-2xl font-extralight text-center"} id='papers'>~ Publications ~</h3>
+ [2m276[0m |           <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+ GET /_next/static/webpack/f6eb1628b9cfe64b.webpack.hot-update.json 500 in 152ms
+ GET /_next/static/webpack/f6eb1628b9cfe64b.webpack.hot-update.json 500 in 5ms
+ GET / 500 in 13ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 500 in 8ms
+ GET / 500 in 6ms
+ GET / 500 in 6ms
+ GET / 500 in 11ms
+ ⨯ ./app/page.tsx
+Error:   [31mx[0m Expected '</', got 'jsx text (
+  [31m|[0m
+  [31m|[0m       )'
+     ,-[[36;1;4m/Users/luke/Documents/personal/lukemelas.github.io/app/page.tsx[0m:271:1]
+ [2m268[0m |             <li>• Submitted Bachelor's Thesis and graduated from Harvard!</li>
+ [2m269[0m |             <li>• One computer vision paper accepted at CVPR 2020</li>
+ [2m270[0m |             <li>• My first paper accepted at EMNLP 2019 (an extended project for CS 287)</li>
+ [2m271[0m | [35;1m,[0m[35;1m-[0m[35;1m>[0m       </ul>
+ [2m272[0m | [35;1m|[0m   
+ [2m273[0m | [35;1m`[0m[35;1m-[0m[35;1m>[0m       {/* Papers */}
+ [2m274[0m |           <hr className="my-8 border-t border-gray-300" />
+ [2m275[0m |           <h3 className={"mb-4 text-2xl font-extralight text-center"} id='papers'>~ Publications ~</h3>
+ [2m276[0m |           <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+ GET /_next/static/webpack/f6eb1628b9cfe64b.webpack.hot-update.json 500 in 239ms
+ GET /_next/static/webpack/f6eb1628b9cfe64b.webpack.hot-update.json 500 in 11ms
+ GET / 500 in 16ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 500 in 12ms
+ GET / 500 in 8ms
+ GET / 500 in 4ms
+ GET / 500 in 13ms
+ ✓ Compiled /_not-found in 424ms (989 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /_next/static/webpack/f6eb1628b9cfe64b.webpack.hot-update.json 404 in 722ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 220ms
+ GET /_next/static/webpack/f6eb1628b9cfe64b.webpack.hot-update.json 404 in 223ms
+ GET / 200 in 164ms
+ GET / 200 in 123ms
+ ✓ Compiled in 152ms (989 modules)
+ GET / 200 in 129ms
+ GET / 200 in 29ms
+ ✓ Compiled in 160ms (989 modules)
+ GET / 200 in 118ms
+ GET / 200 in 31ms
+ ✓ Compiled in 184ms (989 modules)
+ GET / 200 in 114ms
+ GET / 200 in 46ms
+ ✓ Compiled in 163ms (989 modules)
+ GET / 200 in 94ms
+ GET / 200 in 25ms
+ ✓ Compiled in 135ms (988 modules)
+ GET / 200 in 98ms
+ GET / 200 in 27ms
+ ✓ Compiled in 168ms (988 modules)
+ GET / 200 in 98ms
+ GET / 200 in 32ms
+ ✓ Compiled in 179ms (988 modules)
+ GET / 200 in 139ms
+ GET / 200 in 72ms
+ ✓ Compiled in 194ms (988 modules)
+ GET / 200 in 90ms
+ GET / 200 in 24ms
+ GET / 200 in 129ms
+ ✓ Compiled in 142ms (988 modules)
+ GET / 200 in 115ms
+ GET / 200 in 29ms
+ ✓ Compiled in 171ms (988 modules)
+ GET / 200 in 101ms
+ GET / 200 in 26ms
+ ✓ Compiled in 169ms (988 modules)
+ GET / 200 in 133ms
+ GET / 200 in 128ms
+ GET / 200 in 133ms
+ ⨯ ./app/page.tsx
+Error:   [31mx[0m Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+     ,-[[36;1;4m/Users/luke/Documents/personal/lukemelas.github.io/app/page.tsx[0m:250:1]
+ [2m247[0m |       <hr className="my-8 border-t border-gray-300" />
+ [2m248[0m |       <h3 className={"mb-4 text-2xl font-extralight text-center"} id='papers'>~ News ~</h3>
+ [2m249[0m |       <ul>
+ [2m250[0m |         <li>• Defended my thesis! Thank you to my advisors Andrea and Chris, to my examiners, and everyone who !)</span> */}
+     : [35;1m                                                                                                                           ^[0m
+ [2m251[0m |         <li>• Joined Cursor (Anysphere) to build coding models!</li>
+ [2m252[0m |         <li>• Submitted my DPhil thesis</li>
+ [2m253[0m |         <li>• One computer vision paper (<Link href="https://arxiv.org/abs/2409.08271">↗</Link>) accepted to 3DV 2025</li>
+     `----
+  [31mx[0m Expected '</', got 'jsx text ( */}
+  [31m|[0m         )'
+     ,-[[36;1;4m/Users/luke/Documents/personal/lukemelas.github.io/app/page.tsx[0m:250:1]
+ [2m247[0m |           <hr className="my-8 border-t border-gray-300" />
+ [2m248[0m |           <h3 className={"mb-4 text-2xl font-extralight text-center"} id='papers'>~ News ~</h3>
+ [2m249[0m |           <ul>
+ [2m250[0m | [35;1m,[0m[35;1m-[0m[35;1m>[0m         <li>• Defended my thesis! Thank you to my advisors Andrea and Chris, to my examiners, and everyone who !)</span> */}
+ [2m251[0m | [35;1m`[0m[35;1m-[0m[35;1m>[0m         <li>• Joined Cursor (Anysphere) to build coding models!</li>
+ [2m252[0m |             <li>• Submitted my DPhil thesis</li>
+ [2m253[0m |             <li>• One computer vision paper (<Link href="https://arxiv.org/abs/2409.08271">↗</Link>) accepted to 3DV 2025</li>
+ [2m254[0m |             <li>• One computer vision paper (<Link href="https://lukemelas.github.io/IM-3D/">↗</Link>) accepted to ICML 2024</li>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+ GET / 500 in 12ms
+ GET / 500 in 6ms
+ GET / 500 in 5ms
+ GET / 500 in 7ms
+ ✓ Compiled /_not-found in 352ms (975 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /_next/static/webpack/f6eb1628b9cfe64b.webpack.hot-update.json 404 in 112ms
+ GET /_next/static/webpack/f6eb1628b9cfe64b.webpack.hot-update.json 404 in 578ms
+ GET / 200 in 265ms
+ GET / 200 in 149ms
+ GET / 200 in 84ms
+ ✓ Compiled in 136ms (989 modules)
+ GET / 200 in 103ms
+ GET / 200 in 51ms
+ ✓ Compiled in 183ms (989 modules)
+ GET / 200 in 108ms
+ GET / 200 in 38ms
+ ✓ Compiled in 153ms (988 modules)
+ GET / 200 in 131ms
+ GET / 200 in 29ms
+ ✓ Compiled in 188ms (988 modules)
+ GET / 200 in 93ms
+ GET / 200 in 24ms
+ ✓ Compiled in 164ms (988 modules)
+ GET / 200 in 132ms
+ GET / 200 in 58ms
+ ✓ Compiled in 193ms (988 modules)
+ GET / 200 in 96ms
+ GET / 200 in 25ms
+ ✓ Compiled in 122ms (988 modules)
+ GET / 200 in 108ms
+ GET / 200 in 58ms
+ ✓ Compiled in 172ms (988 modules)
+ GET / 200 in 106ms
+ GET / 200 in 32ms
+ ✓ Compiled in 146ms (988 modules)
+ GET / 200 in 109ms
+ GET / 200 in 27ms
+ ✓ Compiled in 127ms (988 modules)
+ GET / 200 in 90ms
+ GET / 200 in 23ms
+ GET / 200 in 116ms
+ ✓ Compiled in 145ms (988 modules)
+ GET / 200 in 108ms
+ GET / 200 in 29ms
+ ✓ Compiled in 147ms (988 modules)
+ GET / 200 in 90ms
+ GET / 200 in 23ms
+ ✓ Compiled in 178ms (988 modules)
+ GET / 200 in 114ms
+ GET / 200 in 45ms
+ ✓ Compiled in 158ms (988 modules)
+ GET / 200 in 92ms
+ GET / 200 in 29ms
+ ✓ Compiled in 144ms (988 modules)
+ GET / 200 in 96ms
+ GET / 200 in 25ms
+ ✓ Compiled in 291ms (988 modules)
+ GET / 200 in 112ms
+ GET / 200 in 27ms
+ ✓ Compiled in 170ms (988 modules)
+ GET / 200 in 109ms
+ GET / 200 in 32ms
+ ✓ Compiled in 217ms (988 modules)
+ GET / 200 in 95ms
+ GET / 200 in 26ms
+ ✓ Compiled in 146ms (988 modules)
+ GET / 200 in 97ms
+ GET / 200 in 25ms
+ ✓ Compiled in 180ms (988 modules)
+ GET / 200 in 109ms
+ GET / 200 in 53ms
+ ✓ Compiled in 148ms (988 modules)
+ GET / 200 in 91ms
+ GET / 200 in 25ms
+ ✓ Compiled in 142ms (988 modules)
+ GET / 200 in 123ms
+ GET / 200 in 58ms
+ GET / 200 in 144ms
+ ✓ Compiled in 171ms (988 modules)
+ GET / 200 in 122ms
+ GET / 200 in 53ms
+ ✓ Compiled in 180ms (988 modules)
+ GET / 200 in 95ms
+ GET / 200 in 25ms
+ ✓ Compiled in 142ms (988 modules)
+ GET / 200 in 107ms
+ GET / 200 in 27ms
+ GET / 200 in 114ms
+ ✓ Compiled in 165ms (988 modules)
+ GET / 200 in 119ms
+ GET / 200 in 35ms
+ ✓ Compiled in 153ms (988 modules)
+ GET / 200 in 97ms
+ GET / 200 in 31ms
+ ✓ Compiled in 161ms (988 modules)
+ GET / 200 in 101ms
+ GET / 200 in 35ms
+ ✓ Compiled in 125ms (988 modules)
+ GET / 200 in 90ms
+ GET / 200 in 32ms
+ ✓ Compiled in 180ms (988 modules)
+ GET / 200 in 89ms
+ GET / 200 in 23ms
+ ✓ Compiled in 366ms (988 modules)
+ GET / 200 in 133ms
+ GET / 200 in 28ms
+ ✓ Compiled in 144ms (988 modules)
+ GET / 200 in 98ms
+ GET / 200 in 23ms
+ ✓ Compiled in 130ms (988 modules)
+ GET / 200 in 91ms
+ GET / 200 in 30ms
+ GET / 200 in 213ms
+ ✓ Compiled in 638ms (988 modules)
+ ✓ Compiled in 169ms (988 modules)
+ ✓ Compiled in 356ms (988 modules)
+ ✓ Compiled in 191ms (988 modules)
+ ✓ Compiled in 144ms (988 modules)
+ ⨯ ./app/page.tsx
+Error:   [31mx[0m Expected '</', got 'jsx text (
+  [31m|[0m         Previously, I received my PhD from Oxford University, where I was lucky to be advised by)'
+     ,-[[36;1;4m/Users/luke/Documents/personal/lukemelas.github.io/app/page.tsx[0m:228:1]
+ [2m225[0m |           <hr className="my-8 border-t border-gray-300" />
+ [2m226[0m |           <p className="mt-8 text-lg">
+ [2m227[0m |             I'm working on <Link href="https://www.cursor.com/" className="hover:underline">Cursor</Link> at <Link href="https://www.anysphere.co/" className="hover:underline">Anysphere</Link>. 
+ [2m228[0m | [35;1m,[0m[35;1m-[0m[35;1m>[0m         </br>
+ [2m229[0m | [35;1m`[0m[35;1m-[0m[35;1m>[0m         Previously, I received my PhD from Oxford University, where I was lucky to be advised by{' '}
+ [2m230[0m |             <Link href="https://www.robots.ox.ac.uk/~vedaldi/" className="hover:underline">
+ [2m231[0m |               Professor Andrea Vedaldi
+ [2m232[0m |             </Link>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+ ✓ Compiled in 316ms (988 modules)
+ ✓ Compiled in 174ms (988 modules)
+ ✓ Compiled in 150ms (988 modules)
+ ✓ Compiled in 143ms (988 modules)
+ ✓ Compiled in 235ms (988 modules)
+ ✓ Compiled in 199ms (988 modules)
+ ✓ Compiled in 130ms (988 modules)
+ ✓ Compiled in 147ms (988 modules)
+ ✓ Compiled in 145ms (988 modules)
+ ✓ Compiled in 145ms (988 modules)
+ ✓ Compiled in 176ms (988 modules)
+ ✓ Compiled in 183ms (988 modules)
+ ✓ Compiled in 185ms (988 modules)
+ ✓ Compiled in 231ms (988 modules)
+ ✓ Compiled in 218ms (988 modules)
+ ✓ Compiled in 205ms (988 modules)
+ ✓ Compiled in 228ms (988 modules)
+ ✓ Compiled in 187ms (988 modules)
+ ✓ Compiled in 169ms (988 modules)
+ ✓ Compiled in 385ms (988 modules)
+ ✓ Compiled in 167ms (988 modules)
+ ✓ Compiled in 166ms (988 modules)
+ ✓ Compiled in 157ms (988 modules)
+ ✓ Compiled in 178ms (988 modules)
+ ✓ Compiled in 195ms (988 modules)
+ ✓ Compiled in 186ms (988 modules)
+ ✓ Compiled in 153ms (988 modules)
+ ✓ Compiled in 139ms (988 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/luke/Documents/personal/lukemelas.github.io/.next/cache/webpack/server-development/0.pack.gz_' -> '/Users/luke/Documents/personal/lukemelas.github.io/.next/cache/webpack/server-development/0.pack.gz'
+ ✓ Compiled in 187ms (988 modules)
+ ✓ Compiled in 210ms (988 modules)
+ ✓ Compiled in 156ms (988 modules)
+ ✓ Compiled in 131ms (988 modules)
+ ✓ Compiled in 154ms (988 modules)
+ ✓ Compiled in 157ms (988 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/luke/Documents/personal/lukemelas.github.io/.next/cache/webpack/client-development/0.pack.gz_' -> '/Users/luke/Documents/personal/lukemelas.github.io/.next/cache/webpack/client-development/0.pack.gz'
+ ✓ Compiled in 232ms (988 modules)

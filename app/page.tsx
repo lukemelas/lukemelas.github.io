@@ -181,12 +181,13 @@ export default function Page() {
 
       {/* Image */}
       <div className="flex justify-center mt-8">
-        <div className="relative w-64 h-64 overflow-hidden rounded-full border-4 border-gray-500 mb-8">
+        <div className="relative w-38 h-38 overflow-hidden rounded-full border-4 border-gray-500 mb-8">
           <Image
             src="/images/portrait-square-2.jpg"
             alt="Luke Melas-Kyriazi"
-            layout="fill"
-            objectFit="cover"
+            fill
+            style={{ objectFit: 'cover' }}
+            priority
           />
         </div>
       </div>
@@ -223,9 +224,10 @@ export default function Page() {
       {/* Bio */}
       <hr className="my-8 border-t border-gray-300" />
       <p className="mt-8 text-lg">
-        I'm a Rhodes Scholar and PhD student at Oxford University. My research
-        spans machine learning, computer vision, and natural language
-        processing. I am lucky to be advised by{' '}
+        I'm building <Link href="https://www.cursor.com/" className="hover:underline">Cursor</Link> at <Link href="https://www.anysphere.co/" className="hover:underline">Anysphere</Link>. 
+        <br /> 
+        <br /> 
+        Previously, I received my PhD from Oxford University, where I was lucky to be advised by{' '}
         <Link href="https://www.robots.ox.ac.uk/~vedaldi/" className="hover:underline">
           Professor Andrea Vedaldi
         </Link>
@@ -233,10 +235,14 @@ export default function Page() {
         <Link href="https://www.robots.ox.ac.uk/~vedaldi/" className="hover:underline">
           Visual Geometry Group (VGG)
         </Link>
-        .{' '}
+        . My research has spanned machine learning, computer vision, and natural language
+        processing.{' '} I'm currently most interested in training large language models for coding.
         {/* Previously I've worked or interned at Meta Research, Forethought AI, and Jane Street. */}
-        I'm always interested in meeting new people and hearing about potential collaborations. 
-        If you'd like to get in touch with me, please email me at lukemk [at] robots [dot] ox [dot] ac [dot] uk.
+        {/* I'm always interested in meeting new people and hearing about potential collaborations.  */}
+        {/* I'm always interested in meeting new people and hearing new ideas.  */}
+        <br /> <br /> 
+        {/* If you'd like to get in touch, feel free to email me at lukemk [at] robots [dot] ox [dot] ac [dot] uk. */}
+        If you'd like to chat about Cursor or anything else, feel free to email me at lukemk [at] robots [dot] ox [dot] ac [dot] uk.
       </p>
       
       {/* Blog posts */}
@@ -246,7 +252,12 @@ export default function Page() {
       <hr className="my-8 border-t border-gray-300" />
       <h3 className={"mb-4 text-2xl font-extralight text-center"} id='papers'>~ News ~</h3>
       <ul>
+        <li>• Joined <Link href="https://www.anysphere.co/" className="hover:underline">Anysphere</Link> to build <Link href="https://www.cursor.com/" className="hover:underline">Cursor</Link>. The next adventure begins!</li>
+        <li>• Defended my thesis! Thank you to Andrea and Chris for your advising, mentorship, and support!</li>
+        <li>• Submitted my DPhil thesis</li>
+        <li>• One computer vision paper (<Link href="https://arxiv.org/abs/2409.08271">↗</Link>) accepted to 3DV 2025</li>
         <li>• One computer vision paper (<Link href="https://lukemelas.github.io/IM-3D/">↗</Link>) accepted to ICML 2024</li>
+        <li>• One medical computer vision paper published in the New England Journal of Medicine (NEJM) (<Link href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11305821/">↗</Link>)</li>
         <li>• Two computer vision papers (<Link href="https://lukemelas.github.io/fixed-point-diffusion-models/">↗</Link>,<Link href="https://abdullahamdi.com/ges/">↗</Link>) accepted to CVPR 2024 </li>
         <li>• One NLP paper (<Link href="https://lukemelas.github.io/mtob/">↗</Link>) accepted to ICLR 2024 <span className='text-red-400'>(as a Spotlight!)</span></li>
         <li>• Two computer vision papers (<Link href="https://lukemelas.github.io/realfusion/">↗</Link>,<Link href="https://lukemelas.github.io/projection-conditioned-point-cloud-diffusion/">↗</Link>) accepted to CVPR 2023 <span className='text-red-400'>(one as a Spotlight!)</span></li>
@@ -268,12 +279,12 @@ export default function Page() {
       <hr className="my-8 border-t border-gray-300" />
       <h3 className={"mb-4 text-2xl font-extralight text-center"} id='papers'>~ Publications ~</h3>
       <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
-        {paperData.map((paper, index) => (
-          <div key={index} className="border border-gray-100 dark:border-gray-800 dark:bg-slate-950 rounded-lg p-4 pb-3 shadow-sm hover:shadow-md transition-shadow duration-300">
+        {paperData.map((paper) => (
+          <div key={paper.title} className="border border-gray-100 dark:border-gray-800 dark:bg-slate-950 rounded-lg p-4 pb-3 shadow-sm hover:shadow-md transition-shadow duration-300">
             <h3 className="text-lg font-medium">{paper.title}</h3>
             <p className="text-sm text-gray-600 dark:text-gray-200">{
-              paper.authors.map((author, index) => (
-                <><span className="text-slate-800 dark:text-slate-200">{author.includes("Melas-Kyriazi")? <span className='font-semibold'>{author}</span> : author}{index != paper.authors.length - 1? ", " : ""}</span></>
+              paper.authors.map((author, i) => (
+                <span key={`${author}-${i}`} className="text-slate-800 dark:text-slate-200">{author.includes("Melas-Kyriazi") ? <span className='font-semibold'>{author}</span> : author}{i != paper.authors.length - 1 ? ", " : ""}</span>
               ))
             }</p>
             <p className="text-gray-600 dark:text-gray-200 mt-1">{paper.publication}{
@@ -297,7 +308,7 @@ export default function Page() {
               </div>
               <div>
                 {paper.tags && paper.tags.map((tag, index) => (
-                  <span className='p-2 pt-1 pb-1 m-2 bg-sky-50 dark:bg-blue-900 text-gray-400 rounded'>{tag}</span>
+                  <span key={`${tag}-${index}`} className='p-2 pt-1 pb-1 m-2 bg-sky-50 dark:bg-blue-900 text-gray-400 rounded'>{tag}</span>
                 ))}
               </div>
             </div>

@@ -17,6 +17,12 @@ const navItems = {
   'https://scholar.google.com/citations?user=btHxkDIAAAAJ': {
     name: 'Google Scholar',
   },
+  'https://www.cursor.com/': {
+    name: 'Cursor',
+  },
+  'https://www.anysphere.com/': {
+    name: 'Anysphere',
+  },
 }
 
 export function Navbar() {
