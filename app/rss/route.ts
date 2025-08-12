@@ -1,6 +1,9 @@
 import { baseUrl } from 'app/sitemap'
 import { getBlogPosts } from 'app/blog/utils'
 
+// Ensure compatibility with `output: export` by forcing this route to be static
+export const dynamic = 'force-static'
+
 export async function GET() {
   let allBlogs = await getBlogPosts()
 

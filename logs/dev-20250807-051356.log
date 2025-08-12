@@ -467,3 +467,9 @@ Import trace for requested module:
  ✓ Compiled in 157ms (988 modules)
 <w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/luke/Documents/personal/lukemelas.github.io/.next/cache/webpack/client-development/0.pack.gz_' -> '/Users/luke/Documents/personal/lukemelas.github.io/.next/cache/webpack/client-development/0.pack.gz'
  ✓ Compiled in 232ms (988 modules)
+ ✓ Compiled in 249ms (403 modules)
+ ✓ Compiled in 105ms (403 modules)
+ ✓ Compiled in 95ms (403 modules)
+ ✓ Compiled in 236ms (988 modules)
+ ✓ Compiled in 90ms (403 modules)
+ ✓ Compiled in 208ms (988 modules)
