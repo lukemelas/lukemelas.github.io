@@ -224,7 +224,7 @@ export default function Page() {
       {/* Bio */}
       <hr className="my-8 border-t border-gray-300" />
       <p className="mt-8 text-lg">
-        I'm building <Link href="https://www.cursor.com/" className="hover:underline">Cursor</Link> at <Link href="https://www.anysphere.co/" className="hover:underline">Anysphere</Link>. 
+        I'm building <Link href="https://www.cursor.com/" className="hover:underline">Cursor</Link>.
         <br /> 
         <br /> 
         Previously, I received my PhD from Oxford University, where I was lucky to be advised by{' '}

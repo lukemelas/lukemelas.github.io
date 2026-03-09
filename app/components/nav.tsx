@@ -1,4 +1,3 @@
-import { Span } from 'next/dist/trace'
 import Link from 'next/link'
 
 const navItems = {
@@ -19,9 +18,6 @@ const navItems = {
   },
   'https://www.cursor.com/': {
     name: 'Cursor',
-  },
-  'https://www.anysphere.com/': {
-    name: 'Anysphere',
   },
 }
 
