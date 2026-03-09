@@ -20,9 +20,6 @@ const navItems = {
   'https://www.cursor.com/': {
     name: 'Cursor',
   },
-  'https://www.anysphere.com/': {
-    name: 'Anysphere',
-  },
 }
 
 export function Navbar() {
