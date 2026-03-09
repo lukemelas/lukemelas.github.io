@@ -224,7 +224,7 @@ export default function Page() {
       {/* Bio */}
       <hr className="my-8 border-t border-gray-300" />
       <p className="mt-8 text-lg">
-        I'm building <Link href="https://www.cursor.com/" className="hover:underline">Cursor</Link> at <Link href="https://www.anysphere.co/" className="hover:underline">Anysphere</Link>. 
+        I'm building <Link href="https://www.cursor.com/" className="hover:underline">Cursor</Link> at Anysphere.
         <br /> 
         <br /> 
         Previously, I received my PhD from Oxford University, where I was lucky to be advised by{' '}
@@ -252,7 +252,7 @@ export default function Page() {
       <hr className="my-8 border-t border-gray-300" />
       <h3 className={"mb-4 text-2xl font-extralight text-center"} id='papers'>~ News ~</h3>
       <ul>
-        <li>• Joined <Link href="https://www.anysphere.co/" className="hover:underline">Anysphere</Link> to build <Link href="https://www.cursor.com/" className="hover:underline">Cursor</Link>. The next adventure begins!</li>
+        <li>• Joined Anysphere to build <Link href="https://www.cursor.com/" className="hover:underline">Cursor</Link>. The next adventure begins!</li>
         <li>• Defended my thesis! Thank you to Andrea and Chris for your advising, mentorship, and support!</li>
         <li>• Submitted my DPhil thesis</li>
         <li>• One computer vision paper (<Link href="https://arxiv.org/abs/2409.08271">↗</Link>) accepted to 3DV 2025</li>
