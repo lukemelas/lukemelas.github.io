@@ -10,6 +10,9 @@ const navItems = {
   '/#papers': {
     name: 'Papers',
   },
+  '/advisors': {
+    name: 'Advisors',
+  },
   'https://github.com/lukemelas/': {
     name: 'GitHub',
   },
