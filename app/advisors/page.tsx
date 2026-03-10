@@ -173,19 +173,31 @@ function renderAncestorNode(person: Advisor, seen: Set<string>, key: string) {
 
   return (
     <li key={key} className="relative pl-4 md:pl-5">
-      <span
-        className="absolute -left-2.5 top-[0.05rem] h-[1.15rem] w-3 rounded-bl-md border-b-[1.5px] border-l-[1.5px] border-stone-300 dark:border-stone-600 md:-left-3 md:w-3.5"
-        aria-hidden="true"
-      />
-      <p className="text-base leading-7 text-slate-800 dark:text-slate-200 md:text-lg">
-        <span className="font-medium text-slate-950 dark:text-white">
-          {person.name}
-          {repeated ? '*' : ''}
-        </span>
-        {details ? (
-          <span className="text-slate-500 dark:text-slate-400"> — {details}</span>
-        ) : null}
-      </p>
+      <div className="relative">
+        <span
+          className="absolute -left-2.5 top-[0.05rem] h-[1.15rem] w-3 rounded-bl-md border-b-[1.5px] border-l-[1.5px] border-stone-300 dark:border-stone-600 md:-left-3 md:w-3.5"
+          aria-hidden="true"
+        />
+        <span
+          className="absolute -left-2.5 top-[1.2rem] bottom-0 border-l-[1.5px] border-stone-300 dark:border-stone-600 md:-left-3"
+          aria-hidden="true"
+        />
+        <p className="text-base leading-7 text-slate-800 dark:text-slate-200 md:text-lg">
+          <span className="font-medium text-slate-950 dark:text-white">
+            {person.name}
+            {repeated ? '*' : ''}
+          </span>
+          {details ? (
+            <span className="text-slate-500 dark:text-slate-400"> — {details}</span>
+          ) : null}
+        </p>
+      </div>
+      {ancestors.length > 0 ? (
+        <span
+          className="absolute left-0 top-[1.2rem] bottom-0 border-l-[1.5px] border-stone-300 dark:border-stone-600"
+          aria-hidden="true"
+        />
+      ) : null}
       {ancestors.length > 0 ? (
         <ul className="mt-1 space-y-1 border-l border-slate-300 pl-2 md:pl-3 dark:border-slate-700">
           {ancestors.map((ancestor, index) => (
