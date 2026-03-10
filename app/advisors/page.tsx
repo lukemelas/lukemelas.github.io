@@ -172,8 +172,11 @@ function renderAncestorNode(person: Advisor, seen: Set<string>, key: string) {
   const details = formatAdvisorDetails(person)
 
   return (
-    <li key={key} className="relative pl-3">
-      <span className="absolute left-0 top-[0.95rem] h-px w-1.5 bg-slate-400 dark:bg-slate-600" />
+    <li key={key} className="relative pl-4 md:pl-5">
+      <span
+        className="absolute -left-2.5 top-[0.05rem] h-[1.15rem] w-3 rounded-bl-md border-b-[1.5px] border-l-[1.5px] border-stone-300 dark:border-stone-600 md:-left-3 md:w-3.5"
+        aria-hidden="true"
+      />
       <p className="text-base leading-7 text-slate-800 dark:text-slate-200 md:text-lg">
         <span className="font-medium text-slate-950 dark:text-white">
           {person.name}
