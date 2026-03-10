@@ -227,7 +227,7 @@ export default function Page() {
         I'm building <Link href="https://www.cursor.com/" className="hover:underline">Cursor</Link>.
         <br /> 
         <br /> 
-        Previously, I received my PhD from Oxford University, where I was lucky to be advised by{' '}
+        Previously, I received my PhD from Oxford University, where I was lucky to be <Link href="/advisors" className="hover:underline">advised</Link> by{' '}
         <Link href="https://www.robots.ox.ac.uk/~vedaldi/" className="hover:underline">
           Professor Andrea Vedaldi
         </Link>
