@@ -7,17 +7,11 @@ const navItems = {
   // '/blog': {
   //   name: 'Blog',
   // },
-  '/#papers': {
-    name: 'Papers',
-  },
-  'https://github.com/lukemelas/': {
-    name: 'GitHub',
-  },
   'https://scholar.google.com/citations?user=btHxkDIAAAAJ': {
     name: 'Google Scholar',
   },
-  'https://www.cursor.com/': {
-    name: 'Cursor',
+  'https://github.com/lukemelas/': {
+    name: 'GitHub',
   },
 }
 
