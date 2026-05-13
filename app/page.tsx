@@ -183,7 +183,7 @@ export default function Page() {
       <div className="flex justify-center mt-8">
         <div className="relative w-38 h-38 overflow-hidden rounded-full border-4 border-gray-500 mb-8">
           <Image
-            src="/images/portrait-square-2.jpg"
+            src="/images/profile-2026.png"
             alt="Luke Melas-Kyriazi"
             fill
             style={{ objectFit: 'cover' }}
