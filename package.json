@@ -14,15 +14,23 @@
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
     "geist": "1.4.2",
-    "next": "^15.3.2",
+    "next": "^15.5.23",
     "next-mdx-remote": "^5.0.0",
-    "postcss": "^8.5.3",
+    "postcss": "^8.5.26",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-icons": "^5.5.0",
     "sugar-high": "^0.9.3",
     "tailwindcss": "4.1.5",
     "typescript": "5.8.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "nanoid": "^3.3.18",
+      "sharp": "^0.35.3",
+      "yaml": "^2.8.3",
+      "mdast-util-to-hast": "^13.2.1"
+    }
   },
   "packageManager": "pnpm@10.14.0+sha512.ad27a79641b49c3e481a16a805baa71817a04bbe06a38d17e60e2eaee83f6a146c6a688125f5792e48dd5ba30e7da52a5cda4c3992b9ccf333f9ce223af84748"
 }
