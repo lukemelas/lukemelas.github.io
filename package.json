@@ -14,7 +14,7 @@
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
     "geist": "1.4.2",
-    "next": "^15.5.23",
+    "next": "^15.5.24",
     "next-mdx-remote": "^5.0.0",
     "postcss": "^8.5.26",
     "react": "19.1.0",
